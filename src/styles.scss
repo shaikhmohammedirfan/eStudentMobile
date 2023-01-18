@@ -1,1 +1,183 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  background-color: rgb(39, 40, 44) !important;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 100;
+  color: white;
+
+  // background-image: url("../src/assets/images/Wave.svg");
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex-item {
+  padding: 5rem;
+  text-align: center;
+}
+
+.jumbotron {
+  margin-top: 5px;
+  font-size: 15px;
+
+  box-shadow: rgba(0, 0, 0, 0.75) 10px 10px 5px 0px;
+  background-color: rgb(124, 104, 103);
+}
+
+.jumbotronBlue {
+  background-image: linear-gradient(160deg, #000000 30%, #335063 74%);
+}
+// Text classes
+.TextBlack {
+  color: black;
+}
+
+.TextWhite {
+  color: rgb(248, 226, 226);
+  padding: 1.1rem;
+  word-wrap: break-word;
+
+  line-height: 1.4;
+}
+
+.TextGray {
+  color: rgba(141, 136, 136, 0.671);
+}
+
+.TextBlue {
+  color: rgb(117, 132, 150);
+}
+
+.strongTITLECursive {
+  font-size: 30px;
+}
+.HeadlineText {
+  font-size: 22px;
+}
+
+// End of Text classes
+
+//Buttons classes
+.BWButton {
+  background: rgb(53, 58, 68);
+  color: white;
+}
+
+.closeBtnRight {
+  float: right;
+  width: 45px;
+  height: 35px;
+  min-width: 0px !important;
+  padding: 0px !important;
+
+  color: white;
+  background-color: rgb(247, 0, 0);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+// End of Buttons classes
+
+// Material form field css code
+
+mat-card-title {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  margin-top: 10px;
+  margin-bottom: 1px;
+  color: white;
+}
+
+mat-form-field {
+  color: white;
+  width: 25vw;
+  font-size: 15px;
+  line-height: 3.2rem;
+  padding: 2px;
+}
+//input fill color codes
+.mat-form-field-appearance-fill .mat-form-field-fill {
+  color: rgb(97, 91, 91) !important;
+  // opacity: 1!important;
+}
+
+// ::ng-deep codes in style.css to use in all forms
+//input outline color
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: rgb(97, 91, 91) !important;
+  // opacity: 1!important;
+}
+
+//mat-input focused color
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  color: rgb(241, 229, 229) !important;
+}
+
+// mat-input curson color when focused
+.mat-input-element {
+  caret-color: rgb(124, 188, 231) !important;
+}
+
+// mat-label normal state style
+.mat-form-field-label {
+  color: rgb(196, 179, 179) !important;
+  // color: $mainColor!important;
+}
+
+// mat-label focused style
+.mat-form-field.mat-focused .mat-form-field-label {
+  color: rgb(216, 199, 51) !important;
+}
+
+// mat-label error style
+.mat-form-field.mat-form-field-invalid .mat-form-field-label {
+  color: rgb(14, 237, 245) !important;
+}
+
+// mat-lable border-bottom color
+.mat-form-field-underline .mat-form-field-ripple {
+  background-color: skyblue;
+}
+
+.mat-input-element::placeholder {
+  color: rgb(190, 180, 180);
+}
+.mat-select-value {
+  color: white;
+}
+
+.mat-select-arrow {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid;
+  margin: 0 4px;
+  color: white;
+}
+
+.loader-container {
+  position: fixed;
+  width: 90%;
+  z-index: 99;
+}
+
+/* --- end of Material form field css code --- */
